@@ -115,7 +115,7 @@ public class HealthBarManager : MonoBehaviour
             {
                 damageCoroutine = StartCoroutine(DamageOverTime()); 
                 Debug.Log("Collision avec un ennemi, -5 HP");
-                TakeDamage(5); // Infliger des dégâts
+              
             }
             
         }
@@ -157,7 +157,7 @@ public class HealthBarManager : MonoBehaviour
         while (currentHealth > 0)
         {
             TakeDamage(5);  
-            yield return new WaitForSeconds(3f); 
+            yield return new WaitForSeconds(2f); 
         } 
     }
 
